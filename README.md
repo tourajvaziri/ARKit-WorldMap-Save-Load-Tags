@@ -1,5 +1,5 @@
 # Unity - ARWorldMap Save Load Tags
-This demo shows an example for saving and loading Unity Game Objects in ARKit. The contents are created in AR and later restored in their corresponding positions.
+Example project for saving and loading Unity Game Objects in ARKit. The contents are created in AR and later restored in their corresponding positions.
 
 - Try using Unity version 2018.3.1.f1 as ARKit is updated regularly and might not be compatible with other versions.
 
