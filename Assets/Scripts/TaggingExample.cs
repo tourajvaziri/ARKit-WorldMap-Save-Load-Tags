@@ -39,7 +39,6 @@ public class TaggingExample : MonoBehaviour
     void Awake()
     {
         AddNewTagButton.interactable = false;
-        TagInputField.interactable = false;
         LoadTagsButton.interactable = false;
         DeleteTagsButton.interactable = false;
         GoodStatusStateText.text = "";
@@ -56,12 +55,10 @@ public class TaggingExample : MonoBehaviour
         if (cam.worldMappingStatus == ARWorldMappingStatus.ARWorldMappingStatusMapped && cam.trackingState == ARTrackingState.ARTrackingStateNormal)
         {
             AddNewTagButton.interactable = true;
-            TagInputField.interactable = true;
         }
         else
         {
             AddNewTagButton.interactable = false;
-            TagInputField.interactable = false;
         }
 
         int persistedTag3DCounts = PlayerPrefs.GetInt("PlayerPrefsTagsCountKey", 0);
